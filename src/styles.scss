@@ -1,0 +1,90 @@
+$button-color: rgb(255, 0, 157);
+
+html,
+body,
+* {
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+button {
+  cursor: pointer;
+  background-color: $button-color;
+  border: 5px solid lighten($button-color, 30%);
+  color: white;
+  margin: .2em.5em;
+  padding: .5em;
+  outline: none;
+  &:hover {
+    background-color: darken($button-color, 5%);
+  }
+  &:active {
+    background-color: darken($button-color, 10%);
+  }
+}
+
+.counter {
+  border: 5px solid lighten($button-color, 40%);
+  font-weight: 700;
+  margin: 2em auto;
+  padding: 1em;
+  min-width: 150px;
+  max-width: 200px;
+}
+
+.count {
+  font-size: 5em;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.counter-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 700px;
+}
+
+
+.counters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+}
+
+.counter-ui {
+  display: flex;
+  justify-content: center;
+}
+
+.counter-piece {
+  margin-right: 5px;
+}
+
+.disabled {
+  opacity: 0.4;
+}
+
+.dashboard {
+  min-width: 100px;
+  max-width: 200px;
+  padding: 10px;
+}
+
+.counters-active {
+  height: 200px;
+}
+
+label {
+  font-size: 13px;
+}
+
+.counter-name {
+  text-align: center
+}
